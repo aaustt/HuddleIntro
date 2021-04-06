@@ -1,0 +1,18 @@
+* {
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
