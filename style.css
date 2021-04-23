@@ -1,18 +1,145 @@
 * {
-    font-size: 16px;
-  }
-  
-  body {
-    background-color: hsl(204, 43%, 93%);
-    font-family: "Open Sans", Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  width: 30vw;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+#mockup {
+  margin-left: 15px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  width: 90vw;
+}
+
+h1 {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+button {
+  background: white;
+  color: hsl(257, 40%, 49%);
+  border-radius: 20px;
+  width: 195px;
+  border: solid 2px white;
+  height: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+  font-size: 0.9rem;
+}
+
+#icons{
+color:white;
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+
+}
+
+#lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
     width: 100%;
-    min-height: 100vh;
     display: flex;
+    flex-wrap: row;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
   }
-  
+
+  #upper {
+    min-height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #lower {
+    min-height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
+
+  #mockup {
+    margin-left: 60px;
+    margin-bottom: 50px;
+    width: 78%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 200px;
+  }
+
+  h2 {
+    font-size: 1.02rem;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 155px;
+  }
+
+  button {
+    margin-left: 0px;
+    margin-right: 155px;
+  }
+}
